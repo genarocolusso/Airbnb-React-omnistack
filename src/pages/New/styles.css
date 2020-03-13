@@ -1,0 +1,29 @@
+label#thumbnail {
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+}
+
+label#thumbnail input {
+  display: none;
+}
+label#thumbnail img {
+  transform: scale(1.4);
+  transition: 0.2s all ease-in-out;
+}
+label#thumbnail:hover img {
+  transform: scale(1.6);
+}
+
+label#thumbnail.has-thumbnail {
+  border: 4px dashed rgba(0, 0, 0, 0.2);
+}
+
+label#thumbnail.has-thumbnail img {
+  filter: brightness(10);
+}
